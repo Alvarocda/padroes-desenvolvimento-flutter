@@ -1,5 +1,6 @@
-![image info](https://lh3.googleusercontent.com/proxy/9YaFtSkgS9y4FNUo3mSKxltZpRNSEkZ1Kop3iitxXIlI8Whbr0RiMBytZHPNK2rE41acKRimJOrgWt7NkTZi_jp5LZC2zw65hyBm1W_epVhG1rlxCxXdoVTRyQ)
-
+<p align="center">
+  <img src="https://lh3.googleusercontent.com/proxy/GbnSgS6VQf0lal-sG8Y5WUxVfpPmSwKEXpdDRgYecxLdnLK7u8v4pes4AXUXxUMrrjxfXXHsd4CHXynL3M1MFLhJ3tenmRSRBqqV3xmyCdi9AFj5py3hMpcB6A" />
+</p>
 # Estrutura de projetos mobile
 
 | Data | Nome | Email |  Ação | 
