@@ -69,6 +69,10 @@
          include: package:pedantic/analysis_options.yaml      
          linter:
            rules:
+             camel_case_types: true
+             library_prefixes: true
+             non_constant_identifier_names: true
+             constant_identifier_names: true
              always_specify_types: true
              always_declare_return_types: true
              omit_local_variable_types: false
@@ -97,10 +101,29 @@
            # https://pub.dev/packages/firebase
            firebase 9.0.1
             ```
-   3. Arquivos, classes e metodos
-      1. Todos os arquivos devem ser nomeados utilizando o padrão **snake_case**
-      2. O nome das classes deve ser escritos em **UpperCamelCase** e devem ter o mesmo nome do arquivo
-      3. O nome dos metodos devem ser escritos em **lowerCamelCase**
-   
-      
-   
+   3. Arquivos, classes, métodos e variáveis.
+      1. O nome dos arquivos devem ser escritos em **snake_case**.
+      2. O nome das classes deve ser escritos em **UpperCamelCase** e devem ter o mesmo nome do arquivo.
+      3. O nome dos métodos devem ser escritos em **lowerCamelCase**
+      4. Sempre, na linha de cima da declaração da classe ou do método, deve haver uma indicação conforme exibido no ex abaixo:
+         ```dart
+            ///
+            ///
+            ///
+            class Usuario {
+         
+              ///
+              /// 
+              /// 
+              Usuario();
+              
+              ///
+              /// 
+              /// 
+              int getIdade(){}
+            } 
+            ```
+4. IDEs utilizadas
+   - A IDE utilizada para desenvolvimento mobile com flutter será o IntelliJ IDEA Community  
+     a mesma conta com total suporte a desenvolvimento flutter e também conta com inúmeras  
+     ferramentas que ajudam na hora de programar.
