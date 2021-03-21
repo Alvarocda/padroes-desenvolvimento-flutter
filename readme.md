@@ -1,6 +1,8 @@
+
 <p align="center">
-  <img src="https://lh3.googleusercontent.com/proxy/GbnSgS6VQf0lal-sG8Y5WUxVfpPmSwKEXpdDRgYecxLdnLK7u8v4pes4AXUXxUMrrjxfXXHsd4CHXynL3M1MFLhJ3tenmRSRBqqV3xmyCdi9AFj5py3hMpcB6A" />
+  <img src="https://miro.medium.com/max/1000/1*ilC2Aqp5sZd1wi0CopD1Hw.png" width="200"/>
 </p>
+
 # Estrutura de projetos mobile
 
 | Data | Nome | Email |  Ação | 
@@ -9,7 +11,7 @@
 
 
 1. Estrutura de pasta
-   1. Model
+   1. Models
       1. usuario.dart
       2. pessoa.dart
       3. suspeito.dart
@@ -29,14 +31,14 @@
    5. utils
       2. extensions.dart
       3. connection_utils.dart
-   6. abstract
+   6. abstracts
       1. entity_base.dart
       2. connection_base.dart
       3. repository_base.dart
     
 2. Explicação das pastas
-   1. Model
-      - Na pasta model, teremos todos os objetos que serão utilizados  
+   1. Models
+      - Na pasta models, teremos todos os objetos que serão utilizados  
        no aplicativo, todos os models deverão conter os métodos  
        **fromJson, toJson, toMap e fromMap**  
        e também deverão extender a classe entity_base.dart
@@ -57,13 +59,13 @@
    5. Utils
       - Nessa pasta devem ficar todas as classes que possam facilitar de alguma maneira o desenvolvimento código
     Ex: uma classe especializada em extensões.
-   6. Abstract
+   6. Abstracts
       - Nessa pasta deve ficar todas as classes abstratas do projeto.
 3. Peculiaridades do código
    1. Analysis Options
       - Esse arquivo é serve para criar regras que a IDE irá exigir de todos os  
         programadores que estão trabalhando com esse projeto.  
-        Para fazer o analysis_options funcionar, primeiro é necessário adicionar ao projeto  
+        Para fazer o analysis_options funcionar, primeiro é necessário adicionar ao projeto 
         uma lib chamada Pendantic (https://pub.dev/packages/pedantic) e então, criar na raiz do projeto  
         um arquivo chamado analysis_options.yaml e dentro desse arquivo, deve ser colocado o texto abaixo  
         ```yaml
@@ -88,12 +90,12 @@
         Ao fazer isso, perceberá que a IDE irá mostrar vários avisos, todos eles devem ser corrigidos  
         para que o código fique padronizado.
    2. Instalação de libs no pubspec
-      - Ao instalar uma nova lib no projeto, você precisa se atentar aos pontos abaixo
+      - Ao instalar uma nova lib no projeto, precisa se atentar aos pontos abaixo
          - Não usar ^ na frente da versão, o ^ significa que estamos permitindo que o pacote  
            se atualize automaticamente, e isso não pode acontecer, tirando o ^ nos teremos  
            sempre a certeza de que o pacote esta naquela versão especifica, e caso precisarmos  
            atualizar o pacote, vamos pessoalmente no pub.dev e verificamos o que há de novo  
-           e damos uma olhada no repositorio git da lib para verificarmos as issues e ver  
+           e damos uma olhada no repositório git da lib para verificarmos as issues e ver  
            se não há nenhum bug que pode quebrar tudo ao atualizar o pacote.
          - Ao instalar uma nova lib, coloque em cima dela o link do pacote no pub dev. Ex:
            ```yaml
@@ -125,6 +127,20 @@
             } 
             ```
 4. IDEs utilizadas
-   - A IDE utilizada para desenvolvimento mobile com flutter será o IntelliJ IDEA Community  
-     a mesma conta com total suporte a desenvolvimento flutter e também conta com inúmeras  
+   - A IDE utilizada para desenvolvimento mobile com flutter será o IntelliJ IDEA Community 
+     a mesma conta com total suporte a desenvolvimento flutter e também conta com inúmeras 
      ferramentas que ajudam na hora de programar.
+     
+5. Configurações opcionais
+    - A sintaxe do flutter é case sensitive, 
+      e isso as vezes atrapalha quando você digita
+      um código correto ma esquece de usar o case corrreto.  
+      Existe uma opção que ajuda muito a corrigir esse problema  
+      Para isso, basta apertar a tecla Shift 2x seguidas  
+      e então, na tela que se abrir, digitar Match Case  
+      Clique em Match Case e desative.
+    - O IntelliJ possui um formatador automatico de imports e código
+    que por padrão vem desabilitado, para isso, aperte 2x seguidas a tecla shift e digite
+      **"Format code on save"**, nas opções que aparecerem, clique em format code on save,
+      O Intellij já abrir uma tela de configurações já indicando essa opção,
+      marque ela e marque a opção de baixo **"Organize imports on save"**
